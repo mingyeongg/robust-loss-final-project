@@ -19,8 +19,3 @@ This repository contains the code and empirical results for the final project:
    - CE
    - Adv-CE
    - SmoothAdv-style loss
-
-## Requirements
-
-```bash
-pip install -r requirements.txt
