@@ -1,23 +1,26 @@
-robust-loss-final-project/
-│
-├── README.md
-├── requirements.txt
-├── final_project_experiments.py
-│
-├── results/
-│   ├── letter_label_noise_raw.csv
-│   ├── letter_label_noise_summary.csv
-│   ├── letter_label_noise_drop.csv
-│   ├── breast_hinge_lhs_raw.csv
-│   ├── breast_hinge_lhs_summary.csv
-│   ├── breast_hinge_lhs_drop.csv
-│   ├── psal_style_input_perturbation_raw.csv
-│   ├── psal_style_input_perturbation_summary.csv
-│   └── psal_style_input_perturbation_drop.csv
-│
-└── figures/
-    ├── letter_label_noise_accuracy.png
-    ├── letter_label_noise_drop.png
-    ├── breast_hinge_lhs_accuracy.png
-    ├── input_perturbation_accuracy.png
-    └── input_perturbation_drop.png
+# Robust Loss Functions for Classification
+
+This repository contains the code and empirical results for the final project:
+"A Comparative Study of Recent Robust Loss Functions for Classification."
+
+## Experiments
+
+1. Letter Recognition dataset with uniform label noise:
+   - CE
+   - LDR-KL
+   - OvR-Hinge
+   - OvR-LHS
+
+2. Breast Cancer dataset:
+   - Hinge
+   - LHS
+
+3. PSAL-inspired input perturbation experiment:
+   - CE
+   - Adv-CE
+   - SmoothAdv-style loss
+
+## Requirements
+
+```bash
+pip install -r requirements.txt
